@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Greeting Generator</title>
+    <link rel="stylesheet" href="festivalGreetingGenerator.css">
+    <link
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--  Don't edit prefilled code -->
+    <div class="container">
+        <h1>Festival Greeting Generator</h1>
+        <form id="greetingForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="festival">Choose Festival:</label>
+                <select id="festival" required>
+                    <option value="" disabled selected>Select a festival</option>
+                    <option value="ugadi">Ugadi</option>
+                    <option value="ramadan">Ramadan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="customMessage">Custom Message (max 20 characters):</label>
+                <input type="text" id="customMessage" placeholder="E.g., Stay blessed!" maxlength="20">
+            </div>
+            <button type="submit">Generate Greeting Card</button>
+        </form>
+        <div id="greeting-card">
+            <h2 id="card-title"></h2>
+            <p id="card-message"></p>
+            <p id="custom-message"></p>
+        </div>
+        <div id="history">
+            <h3>Previous Greetings</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+
+<script src="festivalGreetingGenerator.js"></script>
+</body>
+
+</html>
